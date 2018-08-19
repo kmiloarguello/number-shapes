@@ -17,6 +17,19 @@ public class Number {
         }else{
             return false;
         }
+    }
+    public  boolean isSquare(){
+        int x = 1;
+        int square = 1;
 
+        while(square < number){
+            x++;
+            square = x*x;
+        }
+        if(square == number) {
+            return true;
+        }else {
+            return false;
+        }
     }
 }
